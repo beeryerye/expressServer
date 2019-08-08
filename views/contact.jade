@@ -1,9 +1,11 @@
-extends layout
+extends nav
 
 block content
+  hr
+  hr 
   .container
   form(method='post', action='contact/send')
-    h1 Contact.
+    h1 Contact
     .form-group
       label Name
       input.form-control(type='text', name='name', placeholder='Enter Name')
@@ -13,5 +15,4 @@ block content
     .form-group
       label Message
       textarea.form-control(name='message', placeholder='Enter Message')
-    button.btn.btn-default(type='submit')
-    Submit
+    button.btn.btn-secondary(type='submit') Submit
